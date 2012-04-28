@@ -22,9 +22,11 @@ import java.io.IOException;
  *
  * The input must is a tab separated list of: speaker, named entity, context, frequency.
  *
- * The output is a tab separated list of: named entity, context, frequency.
+ * The output is a tab separated list of: BACKGROUND, named entity, context, frequency.
  */
 public class ContextCounterJob extends Configured implements Tool {
+    public static final String BACKGROUND_SPEAKER = "BACKGROUND";
+
     static class ContextCounterReducer extends Reducer<Text, LongWritable, Text, LongWritable> {
         @Override
         protected void reduce(Text key, Iterable<LongWritable> values, Context context) throws IOException, InterruptedException {
@@ -48,7 +50,7 @@ public class ContextCounterJob extends Configured implements Tool {
             final String ctx = attributes[2];
             final long count = Long.parseLong(attributes[3]);
 
-            context.write(new Text(String.format("%s\t%s", ne, ctx)), new LongWritable(count));
+            context.write(new Text(String.format("%s\t%s\t%s", BACKGROUND_SPEAKER, ne, ctx)), new LongWritable(count));
         }
     }
 
