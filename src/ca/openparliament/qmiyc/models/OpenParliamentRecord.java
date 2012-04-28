@@ -46,7 +46,7 @@ public class OpenParliamentRecord {
 		p++;
 		who = attributes[p];
 		p++;
-		contentEn = attributes[p];
+		contentEn = attributes[p].replaceAll("\\<[^>]+\\>", "");
 		p++;
 		sequence = attributes[p];
 		p++;

@@ -6,14 +6,16 @@
 	<classpathentry kind="lib" path="lib/commons-httpclient-3.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-1.0.4.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-api-1.0.4.jar"/>
-	<classpathentry kind="lib" path="lib/hadoop-0.20.2-core.jar"/>
+	<classpathentry kind="lib" path="lib/hadoop-0.20.2-core.jar" sourcepath="/home/pablo/foulab/hackreduce/apache-opennlp-1.5.2-incubating-src"/>
 	<classpathentry kind="lib" path="lib/hadoop-0.20.2-examples.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-0.20.2-streaming.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-0.20.2-test.jar"/>
 	<classpathentry kind="lib" path="lib/hadoop-0.20.2-tools.jar"/>
 	<classpathentry kind="lib" path="lib/junit-4.8.2.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
-	<classpathentry kind="lib" path="lib/opennlp-tools-1.5.2-incubating.jar"/>
+	<classpathentry kind="lib" path="lib/opennlp-tools-1.5.2-incubating.jar" sourcepath="/home/pablo/foulab/hackreduce/apache-opennlp-1.5.2-incubating-src"/>
 	<classpathentry kind="lib" path="lib/opennlp-uima-1.5.2-incubating.jar"/>
+	<classpathentry kind="lib" path="models"/>
 	<classpathentry kind="output" path="bin"/>
+	<referencedentry kind="lib" path="lib/opennlp-maxent-3.0.2-incubating.jar" sourcepath="/home/pablo/foulab/hackreduce/apache-opennlp-1.5.2-incubating-src"/>
 </classpath>
